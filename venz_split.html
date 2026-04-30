@@ -1,0 +1,189 @@
+<div style="padding: 1rem 0;">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    .vmt-wrap, .vmt-wrap * { font-family: 'Poppins', sans-serif !important; }
+
+    @keyframes vmt-slide {
+      0%, 23% { transform: translateY(0); }
+      25%, 48% { transform: translateY(-100%); }
+      50%, 73% { transform: translateY(-200%); }
+      75%, 98% { transform: translateY(-300%); }
+      100% { transform: translateY(-400%); }
+    }
+    @keyframes vmt-counter {
+      0%, 24% { transform: translateY(0); }
+      25%, 49% { transform: translateY(-25%); }
+      50%, 74% { transform: translateY(-50%); }
+      75%, 99% { transform: translateY(-75%); }
+    }
+    @keyframes vmt-progress { from { width: 0%; } to { width: 100%; } }
+
+    .vmt-slides { animation: vmt-slide 16s steps(1) infinite; }
+    .vmt-counter { animation: vmt-counter 16s steps(1) infinite; }
+    .vmt-progress { animation: vmt-progress 4s linear infinite; }
+    .vmt-slide { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  </style>
+
+  <div class="vmt-wrap" style="position: relative; width: 100%; height: 540px; border-radius: var(--border-radius-lg); overflow: hidden; background: white; display: grid; grid-template-columns: 1.05fr 0.95fr;">
+
+    <!-- IZQUIERDA: contenido -->
+    <div style="padding: 36px 40px; display: flex; flex-direction: column; justify-content: space-between; background: white;">
+
+      <!-- TOP -->
+      <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+        <div style="display: flex; align-items: center; gap: 10px; font-size: 11px; letter-spacing: 0.25em; font-weight: 600; color: #0066EE;">
+          <span style="display: inline-block; width: 8px; height: 8px; background: #0066EE; border-radius: 50%;"></span>
+          VENZ MEDIA / PHOENIX, AZ
+        </div>
+        <div style="font-size: 10px; letter-spacing: 0.2em; color: #888; font-weight: 500;">
+          EST. 2020
+        </div>
+      </div>
+
+      <!-- HEADLINE -->
+      <div>
+        <h1 style="font-size: 56px; font-weight: 600; line-height: 1.0; margin: 0 0 24px; color: #0A0A0A; letter-spacing: -0.02em;">
+          Creative <span style="color: #0066EE;">Marketing</span><br/>Agency
+        </h1>
+        <p style="font-size: 16px; font-weight: 600; color: #0066EE; margin: 0 0 10px; line-height: 1.4;">
+          We help companies like yours!
+        </p>
+        <p style="font-size: 14px; font-weight: 400; color: #444; max-width: 400px; margin: 0; line-height: 1.6;">
+          We stand by your side eliminating the challenges in the digital world by allowing you to strategically position your products and/or services with your targeted audience and loyal clients.
+        </p>
+      </div>
+
+      <!-- BOTTOM: Botón estilo imagen + rating -->
+      <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+
+        <!-- Botón Let's Talk con flecha en círculo (estilo imagen) -->
+        <button style="background: #0066EE; color: white; border: none; padding: 8px 8px 8px 28px; border-radius: 999px; font-size: 16px; font-weight: 600; cursor: pointer; font-family: 'Poppins', sans-serif; display: inline-flex; align-items: center; gap: 14px; box-shadow: 0 4px 14px rgba(0,102,238,0.3);">
+          <span>Let's Talk</span>
+          <span style="width: 38px; height: 38px; background: white; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;">
+            <svg viewBox="0 0 24 24" style="width: 18px; height: 18px;" fill="none" stroke="#0066EE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"/>
+              <polyline points="7,7 17,7 17,17"/>
+            </svg>
+          </span>
+        </button>
+
+        <div style="text-align: right;">
+          <div style="font-size: 28px; font-weight: 600; color: #0A0A0A; line-height: 1;">4.9★</div>
+          <div style="font-size: 9px; letter-spacing: 0.2em; color: #888; font-weight: 600; margin-top: 4px;">EXCELLENT ON GOOGLE</div>
+          <div style="font-size: 9px; letter-spacing: 0.2em; color: #888; font-weight: 600;">36 REVIEWS</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DERECHA: showreel rotando -->
+    <div style="position: relative; background: #0066EE; overflow: hidden;">
+
+      <div style="position: absolute; inset: 0; overflow: hidden;">
+        <div class="vmt-slides" style="height: 500%;">
+
+          <!-- Slide 1: BRANDING -->
+          <div class="vmt-slide" style="background: linear-gradient(135deg, #0066EE 0%, #003399 100%); position: relative;">
+            <svg viewBox="0 0 200 200" style="width: 60%;">
+              <circle cx="100" cy="100" r="60" fill="none" stroke="white" stroke-width="3" opacity="0.4"/>
+              <circle cx="100" cy="100" r="40" fill="white"/>
+              <text x="100" y="108" text-anchor="middle" font-size="22" font-weight="600" fill="#0066EE" font-family="Poppins">V</text>
+            </svg>
+            <div style="position: absolute; bottom: 24px; left: 28px; right: 28px; display: flex; justify-content: space-between; align-items: end; color: white;">
+              <div>
+                <div style="font-size: 11px; letter-spacing: 0.2em; opacity: 0.7; font-weight: 500;">CASE 01</div>
+                <div style="font-size: 18px; font-weight: 600; margin-top: 4px;">Branding</div>
+              </div>
+              <div style="font-size: 11px; letter-spacing: 0.15em; font-weight: 500; opacity: 0.7;">2025</div>
+            </div>
+          </div>
+
+          <!-- Slide 2: CREATIVE CONTENT -->
+          <div class="vmt-slide" style="background: #001E5C; position: relative;">
+            <div style="width: 100px; height: 100px; border-radius: 50%; background: white; display: flex; align-items: center; justify-content: center;">
+              <svg viewBox="0 0 24 24" style="width: 36px; height: 36px;"><polygon points="8,5 8,19 19,12" fill="#0066EE"/></svg>
+            </div>
+            <div style="position: absolute; bottom: 24px; left: 28px; right: 28px; display: flex; justify-content: space-between; align-items: end; color: white;">
+              <div>
+                <div style="font-size: 11px; letter-spacing: 0.2em; opacity: 0.7; font-weight: 500;">CASE 02</div>
+                <div style="font-size: 18px; font-weight: 600; margin-top: 4px;">Creative content</div>
+              </div>
+              <div style="font-size: 11px; letter-spacing: 0.15em; font-weight: 500; opacity: 0.7;">2025</div>
+            </div>
+          </div>
+
+          <!-- Slide 3: DIGITAL -->
+          <div class="vmt-slide" style="background: linear-gradient(135deg, #3B8EFF 0%, #0066EE 100%); position: relative; padding: 60px;">
+            <svg viewBox="0 0 240 140" style="width: 80%;">
+              <rect x="10" y="10" width="220" height="120" rx="6" fill="white" opacity="0.95"/>
+              <rect x="20" y="22" width="40" height="6" rx="3" fill="#0066EE"/>
+              <rect x="20" y="36" width="80" height="4" rx="2" fill="#CCD"/>
+              <rect x="20" y="50" width="200" height="60" rx="4" fill="#E6F1FB"/>
+              <circle cx="200" cy="22" r="3" fill="#4ADE80"/>
+            </svg>
+            <div style="position: absolute; bottom: 24px; left: 28px; right: 28px; display: flex; justify-content: space-between; align-items: end; color: white;">
+              <div>
+                <div style="font-size: 11px; letter-spacing: 0.2em; opacity: 0.7; font-weight: 500;">CASE 03</div>
+                <div style="font-size: 18px; font-weight: 600; margin-top: 4px;">Digital service</div>
+              </div>
+              <div style="font-size: 11px; letter-spacing: 0.15em; font-weight: 500; opacity: 0.7;">2025</div>
+            </div>
+          </div>
+
+          <!-- Slide 4: MEDIA BUY -->
+          <div class="vmt-slide" style="background: #0044BB; position: relative;">
+            <svg viewBox="0 0 200 100" style="width: 70%;">
+              <path d="M 10 80 Q 50 20 90 60 T 170 30" fill="none" stroke="white" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="170" cy="30" r="8" fill="white"/>
+              <circle cx="90" cy="60" r="5" fill="white" opacity="0.7"/>
+              <circle cx="50" cy="50" r="5" fill="white" opacity="0.5"/>
+            </svg>
+            <div style="position: absolute; bottom: 24px; left: 28px; right: 28px; display: flex; justify-content: space-between; align-items: end; color: white;">
+              <div>
+                <div style="font-size: 11px; letter-spacing: 0.2em; opacity: 0.7; font-weight: 500;">CASE 04</div>
+                <div style="font-size: 18px; font-weight: 600; margin-top: 4px;">Media buy</div>
+              </div>
+              <div style="font-size: 11px; letter-spacing: 0.15em; font-weight: 500; opacity: 0.7;">2025</div>
+            </div>
+          </div>
+
+          <!-- Loop -->
+          <div class="vmt-slide" style="background: linear-gradient(135deg, #0066EE 0%, #003399 100%); position: relative;">
+            <svg viewBox="0 0 200 200" style="width: 60%;">
+              <circle cx="100" cy="100" r="60" fill="none" stroke="white" stroke-width="3" opacity="0.4"/>
+              <circle cx="100" cy="100" r="40" fill="white"/>
+              <text x="100" y="108" text-anchor="middle" font-size="22" font-weight="600" fill="#0066EE" font-family="Poppins">V</text>
+            </svg>
+            <div style="position: absolute; bottom: 24px; left: 28px; right: 28px; display: flex; justify-content: space-between; align-items: end; color: white;">
+              <div>
+                <div style="font-size: 11px; letter-spacing: 0.2em; opacity: 0.7; font-weight: 500;">CASE 01</div>
+                <div style="font-size: 18px; font-weight: 600; margin-top: 4px;">Branding</div>
+              </div>
+              <div style="font-size: 11px; letter-spacing: 0.15em; font-weight: 500; opacity: 0.7;">2025</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Counter -->
+      <div style="position: absolute; top: 28px; right: 28px; display: flex; align-items: center; gap: 6px; color: white; font-size: 11px; font-weight: 600; letter-spacing: 0.15em; z-index: 3;">
+        <div style="overflow: hidden; height: 14px; line-height: 14px;">
+          <div class="vmt-counter" style="height: 400%;">
+            <div style="height: 25%; line-height: 14px;">01</div>
+            <div style="height: 25%; line-height: 14px;">02</div>
+            <div style="height: 25%; line-height: 14px;">03</div>
+            <div style="height: 25%; line-height: 14px;">04</div>
+          </div>
+        </div>
+        <span style="opacity: 0.5;">/ 04</span>
+      </div>
+
+      <!-- Progress bar -->
+      <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: rgba(255,255,255,0.15); z-index: 3;">
+        <div class="vmt-progress" style="height: 100%; background: white;"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
